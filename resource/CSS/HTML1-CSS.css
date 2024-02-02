@@ -1,0 +1,359 @@
+/* =============================== LOADER =============================== */
+
+.content-spinner {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #242424;
+  backdrop-filter: blur(50px);
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  background-image: linear-gradient(#ba42ff 35%, #00e1ff);
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px #ba42ff, 0px 5px 20px 0px #00e1ff;
+}
+
+.spinner1 {
+  background-color: #242424;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================ BODY ================================= */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1614851099511-773084f6911d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjBibHVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  font-family: 'Abel', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #fff;
+  background-size: cover;
+  margin: 0;
+  font-size: 160%;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* =============================== HEADER ================================ */
+
+.header- {
+  background: #0f1c37;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-text-stroke: 4px #fff;
+  letter-spacing: 6px;
+}
+
+/* ============================== ELEMENTS =============================== */
+
+.text-rectangle {
+  background: #2e2e5e;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #ffffffca;
+}
+
+/* ============================== CONTEINERS ============================== */
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+/* =============================== CONTENTS =============================== */
+
+.content-1 {
+  margin: 10px auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #2D2A7863;
+  width: 90%;
+  text-align: center;
+  box-shadow: 3px 3px 5px #a078d9;
+}
+
+.content-2 {
+  margin: 10px auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #14274E;
+  width: 100%;
+  text-align: center;
+}
+
+/* ============================= IN-CONTENTS ============================= */
+
+.in-content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+/* ============================= IN-IN-CONTENTS ============================= */
+
+.in-in-content-1 {
+  padding: 30px;
+  padding-top: 50px;
+}
+
+/* ============================= IMG-CARDS ============================== */
+
+.download-img {
+  height: 30%;
+  width: 28%;
+  padding: 6px;
+}
+
+.discord-img {
+  height: 30%;
+  width: 30%;
+  padding: 12px;
+}
+
+.server-img {
+  height: 59%;
+  width: 66%;
+}
+
+/* ============================ VISIT/CARDS ============================= */
+
+/*CARD 1 - DOWNLOAD PAGE*/
+.card-1 {
+  position: relative;
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px #7223b34c,
+              -15px -15px 30px #7223b34c;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-1:hover {
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.card-1 .header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3F0071;
+  margin-bottom: 16px;
+}
+
+.card-1 .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card-1:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card-1:hover .card .header .title {
+  padding: 0;
+}
+
+.card-1 .content {
+  display: block;
+  text-align: center;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card-1 .content h4 {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+/*CARD 2 - DISCORD INVITATION*/
+.card-2 {
+  position: relative;
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px #8a86db63,
+              -15px -15px 30px #8a86db63;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-2:hover {
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.card-2 .header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #6b68ab;
+  margin-bottom: 16px;
+}
+
+.card-2 .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card-2:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card-2:hover .card .header .title {
+  padding: 0;
+}
+
+.card-2 .content {
+  display: block;
+  text-align: center;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card-2 .content h4 {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+/*CARD 3- SERVER PAGE*/
+.card-3 {
+  position: relative;
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px #9f87d445,
+              -15px -15px 30px #9f87d445;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-3:hover {
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.card-3 .header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #a087d4;
+  margin-bottom: 16px;
+}
+
+.card-3 .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card-3:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card-3:hover .card .header .title {
+  padding: 0;
+}
+
+.card-3 .content {
+  display: block;
+  text-align: center;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card-3 .content h4 {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+/* ================================ TEXT ================================ */
+
+.info-1 {
+  font-size: 34px;
+  padding-bottom: 20px;
+}
+
+.info-2 {
+  width: 100%;
+  font-size: 24px;
+  margin: 0px 0px 14px 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 38px;
+  border-radius: 20px;
+  background: #4f415258;
+}
+
+.info-3 {
+  padding-bottom: 20px;
+}
+
+/* =============================== FOOTER =============================== */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background: #0f1c37;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
